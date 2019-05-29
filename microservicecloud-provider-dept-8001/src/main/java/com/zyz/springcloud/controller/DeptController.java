@@ -16,7 +16,7 @@ public class DeptController {
     @Autowired
     private DeptService service;
 
-    @RequestMapping(value="/dept/add",method = RequestMethod.GET)
+    @RequestMapping(value="/dept/add",method = RequestMethod.POST)
     public boolean add(@RequestBody Dept dept){
         return service.add(dept);
     }
